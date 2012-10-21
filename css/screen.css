@@ -1,0 +1,259 @@
+/* line 4, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* line 18, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,
+caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 21, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  quotes: "" ""; }
+  /* line 67, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+/* line 22, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  float: none !important;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 23, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+/* line 24, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 19, ../sass/screen.scss */
+body {
+  background: url("../img/fabrictile.png");
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 14px; }
+
+/* line 25, ../sass/screen.scss */
+a {
+  color: #8aa09c; }
+  /* line 28, ../sass/screen.scss */
+  a:hover {
+    color: #5c6a68; }
+
+/* line 33, ../sass/screen.scss */
+h2 {
+  font-size: 2.5em; }
+
+/* ================================= */
+/* PAGE HEADER                       */
+/* ================================= */
+/* line 40, ../sass/screen.scss */
+.page-header {
+  margin-bottom: 20px; }
+  /* line 43, ../sass/screen.scss */
+  .page-header .primary-navigation-menu-container, .page-header .social-navigation-menu-container {
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1; }
+  /* line 47, ../sass/screen.scss */
+  .page-header .primary-navigation-menu {
+    float: right; }
+    /* line 50, ../sass/screen.scss */
+    .page-header .primary-navigation-menu li {
+      display: inline-block;
+      margin-left: 40px; }
+      /* line 54, ../sass/screen.scss */
+      .page-header .primary-navigation-menu li a {
+        color: #fff;
+        text-decoration: none; }
+  /* line 62, ../sass/screen.scss */
+  .page-header .social-navigation-menu li {
+    display: inline-block; }
+  /* line 67, ../sass/screen.scss */
+  .page-header .primary-navigation, .page-header .social-navigation {
+    background: #797979;
+    padding: 10px;
+    width: 100%; }
+  /* line 73, ../sass/screen.scss */
+  .page-header .header-img {
+    background: url("../img/keyboardheader.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    min-width: 960px;
+    position: relative;
+    z-index: 1; }
+
+/* ================================= */
+/* PAGE CONTAINER                    */
+/* ================================= */
+/* line 89, ../sass/screen.scss */
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  overflow: visible; }
+
+/* line 97, ../sass/screen.scss */
+.page-content {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 540px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .page-content {
+    overflow-x: hidden; }
+
+/* line 103, ../sass/screen.scss */
+.sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 300px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -80px 1.5em 80px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .sidebar {
+    overflow-x: hidden; }
+
+/* ================================= */
+/* PAGE FOOTER                       */
+/* ================================= */
+/* line 116, ../sass/screen.scss */
+.page-footer {
+  background: #797979;
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100%; }
+
+/* line 123, ../sass/screen.scss */
+.footer-container {
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1; }
+
+/* ================================= */
+/* POSTS                             */
+/* ================================= */
+/* line 131, ../sass/screen.scss */
+.post {
+  position: relative; }
+  /* line 134, ../sass/screen.scss */
+  .post .post-date {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #8e8e8e;
+    color: #fff;
+    font-family: "Courier New", monospace;
+    left: -65px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    width: 60px; }
+    /* line 146, ../sass/screen.scss */
+    .post .post-date .day {
+      font-size: 3em;
+      margin-bottom: -10px; }
+    /* line 147, ../sass/screen.scss */
+    .post .post-date .month {
+      font-size: 1.7em;
+      text-transform: uppercase; }
+    /* line 148, ../sass/screen.scss */
+    .post .post-date .year {
+      font-size: 1.3em; }
+  /* line 151, ../sass/screen.scss */
+  .post .post-title {
+    margin-bottom: 10px; }
+  /* line 155, ../sass/screen.scss */
+  .post .post-title a {
+    text-decoration: none; }
+  /* line 159, ../sass/screen.scss */
+  .post .post-meta {
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    width: 540px;
+    border-bottom: 1px dashed #666;
+    border-top: 1px dashed #666;
+    margin-bottom: 20px;
+    padding: 5px 0; }
+    /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+    * html .post .post-meta {
+      overflow-x: hidden; }
+  /* line 167, ../sass/screen.scss */
+  .post .related-content {
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    width: 460px;
+    color: #666; }
+    /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+    * html .post .related-content {
+      overflow-x: hidden; }
+    /* line 171, ../sass/screen.scss */
+    .post .related-content a {
+      text-decoration: none; }
+  /* line 176, ../sass/screen.scss */
+  .post .comment-count {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 60px;
+    background: url("../img/comment.png") center center no-repeat;
+    background-size: auto 35px;
+    background-position: center 5px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center; }
+    /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+    * html .post .comment-count {
+      overflow-x: hidden; }
+  /* line 187, ../sass/screen.scss */
+  .post .wp-post-image {
+    margin-bottom: 20px; }
+
+/* line 192, ../sass/screen.scss */
+.clearer {
+  clear: both; }

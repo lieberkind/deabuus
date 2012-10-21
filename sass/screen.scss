@@ -1,0 +1,198 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+
+// Import the necessary CSS3 modules
+@import "compass/css3/background-size";
+@import "compass/css3/box-sizing";
+@import "compass/css3/border-radius";
+
+body {
+  background: url('../img/fabrictile.png');
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+/* ================================= */
+/* PAGE HEADER                       */
+/* ================================= */
+.page-header {
+  margin-bottom: 20px;
+
+  .primary-navigation-menu-container, .social-navigation-menu-container {
+    @include container;
+  }
+
+  .primary-navigation-menu {
+    float: right;
+
+    li {
+      display: inline-block;
+      margin-left: 40px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .social-navigation-menu {
+    li {
+      display: inline-block;
+    }
+  }
+
+  .primary-navigation, .social-navigation {
+    background: rgb(121, 121, 121);
+    padding: 10px;
+    width: 100%
+  }
+  
+  .header-img {   
+    background: url("../img/keyboardheader.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    min-width: 960px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+
+/* ================================= */
+/* PAGE CONTAINER                    */
+/* ================================= */
+.page-container {
+  @include container;
+  // background: url("../img/grid.png");
+  overflow: visible;
+}
+
+// Page content                        
+// =================================
+.page-content {
+  @include column(7);
+}
+
+// Sidebar                        
+// =================================
+.sidebar {
+  @include box-sizing(border-box);
+  @include column(4, true);
+  @include push(1);
+}
+
+
+
+
+
+/* ================================= */
+/* PAGE FOOTER                       */
+/* ================================= */
+.page-footer {
+  background: rgb(121, 121, 121);
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-container {
+  @include container;
+}
+
+
+/* ================================= */
+/* POSTS                             */
+/* ================================= */
+.post {
+  position: relative;
+
+  .post-date {
+    @include box-sizing(border-box);
+    @include border-left-radius(3px);
+    background: rgb(142, 142, 142);
+    color: #fff;
+    font-family: "Courier New", monospace;
+    left: -65px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+
+    .day { font-size: 3em; margin-bottom: -10px;}
+    .month { font-size: 1.7em; text-transform: uppercase;}
+    .year { font-size: 1.3em; }
+  }
+
+  .post-title {
+    margin-bottom: 10px;
+  }
+
+  .post-title a {
+    text-decoration: none;
+  }
+
+  .post-meta {
+    @include column(7);
+    border-bottom: 1px dashed #666;
+    border-top: 1px dashed #666;
+    margin-bottom: 20px;
+    padding: 5px 0;
+  }
+
+  .related-content {
+    @include column(6);
+    color: #666;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .comment-count {
+    @include border-radius(2px);
+    @include column(1, true);
+    background: url('../img/comment.png') center center no-repeat;
+    background-size: auto 35px;
+    background-position: center 5px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .wp-post-image {
+    margin-bottom: 20px;
+  }
+}
+
+.clearer {
+  clear: both;
+}
+
+
+
+
